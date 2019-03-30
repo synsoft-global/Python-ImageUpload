@@ -1,0 +1,1 @@
+git push https://heroku:d0546500-8885-46f6-91d2-188a4feddae8@git.heroku.com/ci-imageupload.git master

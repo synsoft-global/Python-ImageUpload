@@ -1,0 +1,30 @@
+<!-- For uploaded image -->
+{% extends "main_app/base.html" %}
+{% load static %}
+{% load staticfiles %}
+
+{% block content %}
+  <nav aria-label="breadcrumb d-flex">
+    <ol class="breadcrumb d-flex justify-content-center">
+      <li class="breadcrumb-item"><a href="{% url 'main_app:index' %}">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Uploaded Image</li>
+    </ol>
+  </nav>
+  {% if uploaded_file_url %}
+	  <div class="row py-xl-4 py-md-3 py-2">
+	      <div class="offset-md-2 col-md-8 order-md-1">
+			    <div class="card mt-3" style="width: 18rem;margin: 0 auto;"> 
+			    	{% if uploaded_file_url %}
+			    		<img class="card-img-top" src="{{ uploaded_file_url }}" alt="No Image Found" />
+			    	{% else %}
+			    		<img class="card-img-top" src="{% static "" %}main_app/img/img_car.jpg" alt="No Image Found" />
+			    	{% endif %}
+			      <div class="card-body">
+			        <h5 class="card-title text-center">Uploaded Image</h5>
+			      </div>
+			    </div>
+	      </div>
+	  </div>
+  {% endif %}
+
+{% endblock %}

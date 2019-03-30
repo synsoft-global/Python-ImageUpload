@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+  <title>SynsoftGlobal</title>
+</head>
+<body>
+  <div class="container">
+    <div class="pt-3 text-center"> <img class="d-block mx-auto mb-4" src="https://www.synsoftglobal.com/wp-content/uploads/2018/01/synsoft.png" alt="" width="auto" height="auto">
+    </div>
+
+    {% block content %} {% endblock %}
+
+    <!-- footer starts -->
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2019 Synsoft Global</p>
+    </footer>
+    <!-- footer ends -->
+    
+    <!-- Optional JavaScript --> 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script> 
+    <script>
+      // Add the following code if you want the name of the file appear on select
+      $(".custom-file-input").on("change", function() {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+      });
+    </script> 
+  </div>
+</body>
+</html>

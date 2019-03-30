@@ -1,0 +1,22 @@
+<!-- For upload form -->
+{% extends "main_app/base.html" %}
+{% load static %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="row py-xl-5 py-md-3 py-2">
+      <div class="offset-md-2 col-md-8 order-md-1 py-xl-5 py-md-3 py-2">
+        <h4 class="mb-3">Upload Image</h4>
+        <form class="needs-validation" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="custom-file">
+            <input type="file" name="myfile" class="custom-file-input" accept="image/*">
+            <label class="custom-file-label" for="customFile">Choose file</label>
+          </div>
+          <p style="color: red;">{{error}}</p>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Upload</button>
+        </form>
+      </div>
+    </div>
+{% endblock %}
