@@ -1,1 +1,1 @@
-git push https://heroku:d0546500-8885-46f6-91d2-188a4feddae8@git.heroku.com/ci-imageupload.git master
+git push https://heroku:ca86a9b2-bc18-4ce2-9094-4360d5c9b4fe@git.heroku.com/python-image-upload.git master
