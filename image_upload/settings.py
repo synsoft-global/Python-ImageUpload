@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'ci-imageupload.herokuapp.com',
+	'python-image-upload.herokuapp.com',
     '127.0.0.1'
 ]
 
